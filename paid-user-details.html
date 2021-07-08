@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Inner Dots | User Management</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="images/fav.png" type="image/ico" sizes="16x16">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Logo">
+            <img src="images/Inner-Logo.png">
+        </div>
+        <div class="Navigation">
+            <div class="header-notifications">
+                <a href="notification.html">
+                    <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+                    <span class="badge">5</span>
+                </a>
+                
+            </div>
+
+            <div class="Avater">
+                <a href="javascript:void(0);">
+                    <figure><img src="images/profile.jpg"></figure> Bob Hyden </a>
+                <ul>
+                    <li>
+                        <figure><img src="images/profile.jpg"></figure>
+                        <h4> Bob Hyden <span>Administrator</span></h4>
+                    </li>
+                    <li><a href="setting.html"><span><i class="fa fa-cog"></i></span> Setting</a></li>
+                    <li><a href="login.html"><span><i class="fa fa-sign-out"></i></span> Logout</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="SidenavBar">
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <span><i class="fa fa-tachometer"></i></span>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="user-management.html">
+                    <span><i class="fa fa-user"></i></span> 
+                    <p>User Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="profession-management.html">
+                    <span><i class="faImg"><img src="images/profession.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Profession Management</p>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="paid-management.html">
+                    <span><i class="faImg"><img src="images/paid.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Paid Profiles Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="point-management.html">
+                    <span><i class="fa fa-product-hunt"></i></span> 
+                    <p>Points Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="class-management.html">
+                    <span><i class="fa fa-bar-chart" aria-hidden="true"></i></span> 
+                    <p>Class Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="channel-management.html">
+                    <span><i class="faImg"><img src="images/channel.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Channel Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="commission-management.html">
+                    <span><i class="faImg"><img src="images/percentage.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Commission Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="sub-admin-management.html">
+                    <span><i class="faImg"><img src="images/admin.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Sub-admin Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="transaction.html">
+                    <span><i class="faImg"><img src="images/transaction.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Transactions Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="push-notification.html">
+                    <span><i class="fa fa-bell"></i></span>
+                    <p>Push Notification</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="static-content-management.html">
+                    <span><i class="fa fa-font"></i></span>
+                    <p>Static content Management</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="support.html">
+                    <span><i class="fa fa-question"></i></span> 
+                    <p>Support Management </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="report.html">
+                    <span><i class="fa fa-flag-o"></i></span> 
+                    <p>Reports Management </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <span><i class="fa fa-sign-out"></i></span> 
+                    <p>Logout</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="WrapperArea">
+        <div class="WrapperBox">
+            <div class="Small-Wrapper">
+                <h4 class="Title">User Details</h4>
+
+                <div class="HelpArea">
+                    <ul class="nav nav-tabs static_content_menu">
+                        <li class="active"><a data-tag="User" href="javascript:void(0);">User Details</a></li>
+                        <li><a data-tag="Commission" href="javascript:void(0);">Commission Details </a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="content show" id="User">
+                            <div class="DetailsArea">
+                                <div class="DetailsProfile">
+                                    <figure><img src="images/profile.jpg"></figure>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span>User id</span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Date of Registration</span>
+                                    </li>
+            
+                                    <li>
+                                        <span>First Name</span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Last Name</span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Profile Picture  </span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Cover Picture </span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Email address </span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Phone Number </span>
+                                    </li>
+            
+                                    <li>
+                                        <span>About User </span>
+                                    </li>
+            
+                                    <li>
+                                        <span>Total Number of Posts  </span>
+                                    </li>
+                                   
+                                    <li>
+                                        <span>Education Details </span>
+                                        <ul>
+                                            <li><span>Education Name of the School</span></li>
+                                            <li><span>Degree </span></li>
+                                            <li><span>Field of Study  </span></li>
+                                            <li><span>Start Date </span> </li>
+                                            <li><span>End Date </span> </li>
+                                            <li><span>Description  </span></li>
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span>Payments Details </span>
+                                        <ul>
+                                            <li><span>Select Profession Type </span></li>
+                                            <li><span>Type of National Identify  </span></li>
+                                            <li><span>Uploaded images of Id proofs   </span></li>
+                                            <li><span>Professional Id Proofs </span> </li>
+                                            <li><span>Action </span> </li>
+                                        </ul>
+                                    </li>
+            
+                                    <li>
+                                        <span>Experience Details </span>
+                                        <ul>
+                                            <li><span>Title</span>  </li>
+                                            <li><span>Employment Type</span>   </li>
+                                            <li><span>Company Name </span>  </li>
+                                            <li><span>Location </span>  </li>
+                                            <li><span>Current Role or End Date</span>   </li>
+                                            <li><span>Start Date</span>   </li>
+                                            <li><span>Description  </span> </li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <span>Number of the followers </span>
+                                    </li>
+                                   
+                                    <li>
+                                        <span>Number of the following </span>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content" id="Commission">
+                            <div class="WrapperArea">
+                                <div class="WrapperBox">
+                                    <div class="Small-Wrapper">
+                                        <div class="enterKey">
+                                            <h4 class="Title">Commission Management</h4>
+                                        </div>
+                        
+                                        <div class="TableList">
+                                            <div class="dragscroll">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>S. No</th>
+                                                            <th>Type of paid Class </th>
+                                                            <th>Class Charges Range  </th>
+                                                            <th>Commission percentage </th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Live </td>
+                                                            <td>100 to 500 </td>
+                                                            <td>10%</td>
+                                                            <td>
+                                                                <a class="Blue" href="commission-edit.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <label class="switch blockUnblock_btn">
+                                                                    <input type="checkbox">
+                                                                    <span class="slider"></span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        
+                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="Pagination">
+                                            <ul>
+                                                <li><a href="#">Previous</a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">Next</a></li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
